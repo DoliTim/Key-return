@@ -1,0 +1,149 @@
+/* src/components/AboutUs.css */
+.about-us {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 2rem;
+    margin-top: 8rem; /* Adding margin-top to push content below the fixed navbar */
+  }
+  
+  .about-us-header {
+    text-align: center;
+    background-color: #1a2a6c; /* Darker Blue */
+    color: white;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .mission-section {
+    background-color: #e6b800; /* Darker Yellow */
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  .mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .mission-icon {
+    font-size: 3rem;
+    color: #1a2a6c; /* Darker Blue */
+    margin-bottom: 1rem;
+  }
+  
+  .mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .mission-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .values-section {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .values-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a2a6c; /* Darker Blue */
+  }
+  
+  .values-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .value {
+    background-color: #e6b800; /* Darker Yellow */
+    color: #1a2a6c; /* Darker Blue */
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .value h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .value p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .logo-section {
+    text-align: center;
+    background-color: #1a2a6c; /* Darker Blue */
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+  }
+  
+  .logo-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .logo-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .about-us-footer {
+    text-align: center;
+    background-color: #143258; /* Slightly darker blue */
+    color: white;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+  }
+  
+  .about-us-footer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-footer p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  

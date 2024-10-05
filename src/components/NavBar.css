@@ -1,0 +1,104 @@
+/* src/components/NavBar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e3a8a; /* Darker Blue */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.top-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #FFC300; /* Updated to #FFC300 */
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.top-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.top-info p svg {
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-info p:hover svg {
+  transform: scale(1.2); /* Scale up icons slightly on hover */
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem; /* Increased padding to move links lower */
+}
+
+.logo img {
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.nav-links li {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none; /* Removed underline */
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  padding-bottom: 0.2rem; /* Adjusted padding to move the text slightly lower */
+}
+
+.nav-links a:hover {
+  color: #FFDC00; /* Yellow on hover */
+}
+
+.found-keys a {
+  color: #1e3a8a; /* Blue color for text */
+  background-color: #FFDC00; /* Yellow button background */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 50px; /* Rounded corners */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.found-keys a:hover {
+  color: white; /* White text on hover */
+  background-color: #FF0000; /* Entire button background fills red on hover */
+  transform: translateY(-2px); /* Slightly lift on hover */
+}

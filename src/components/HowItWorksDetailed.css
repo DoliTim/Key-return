@@ -1,0 +1,101 @@
+/* src/components/HowItWorksDetailed.css */
+.how-it-works-detailed {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  .detailed-header {
+    text-align: center;
+    background-color: #1a2a6c; /* Darker Blue */
+    color: white;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+  }
+  
+  .detailed-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .detailed-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .steps-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .step {
+    background-color: #e6b800; /* Darker Yellow */
+    color: #1a2a6c; /* Darker Blue */
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .step-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1a2a6c; /* Darker Blue */
+  }
+  
+  .step h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .step p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .how-it-works-footer {
+    text-align: center;
+    background-color: #1a2a6c;
+    color: white;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+  }
+  
+  .how-it-works-footer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .how-it-works-footer p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    background-color: #e6b800;
+    color: #1a2a6c;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffc107;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  

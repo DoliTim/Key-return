@@ -1,0 +1,54 @@
+/* src/components/StatsSection.css */
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f7f8fa; /* Subtle background to make bubbles stand out */
+}
+
+.stat-bubble {
+  background: rgba(255, 255, 255, 0.2); /* Translucent bubble effect */
+  border-radius: 50%;
+  padding: 2rem;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for floating effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  backdrop-filter: blur(10px); /* Blur effect to create more depth */
+}
+
+.stat-bubble:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #FFDC00; /* Updated color to yellow */
+  margin-bottom: 0.5rem;
+}
+
+.stat-image-icon {
+  width: 40px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a2a6c; /* Darker blue to keep it consistent */
+}
+
+.stat-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333; /* Subtle text color for description */
+  text-align: center;
+}

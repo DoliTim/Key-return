@@ -1,0 +1,116 @@
+/* src/components/LandingPage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f7f8fa;
+}
+
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2843ad 40%, #FFDC00 60%);
+  height: 75vh;
+  animation: fadeIn 1.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content-container {
+  background: rgba(255, 255, 255, 0.15); /* Translucent container */
+  padding: 1.5rem 2rem; /* Reduced top padding to make container shorter */
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition for hover effect */
+  position: relative;
+  top: 10%; /* Adjusted positioning to move container lower */
+}
+
+.hero-content-container:hover {
+  transform: translateY(-10px); /* Move the container up slightly */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.hero-content {
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #FFDC00;
+  color: #0074D9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #FFC300;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  width: 25%;
+  max-width: 250px;
+  position: absolute;
+  right: 20%;
+  bottom: 5%;
+  animation: bounceInLeft 2s ease-out; /* Bounce animation */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10%) scale(1.1);
+  }
+  80% {
+    transform: translateX(5%) scale(0.95);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
