@@ -39,7 +39,7 @@ const LandingPage = () => {
           <div className="hero-content">
             <h1>Securely Return Your Lost Keys</h1>
             <p>
-            The KeyReturn system provides a safe and secure way to return lost keys to their rightful owner. Each key fob has a unique code that ensures your keys are returned directly to you. With the support of trusted logistics partners like GLS, you can have peace of mind knowing your lost keys will always find their way back.
+            The KeyReturn system provides a safe and secure way to return lost keys to their rightful owner. Each key chain has a unique code that ensures your keys are returned directly to you. With the support of trusted logistics partners like GLS, you can have peace of mind knowing your lost keys will always find their way back.
             </p>
             <Link to="how-it-works" smooth={true} duration={1000}>
               <button className="cta-button">How It Works</button>
