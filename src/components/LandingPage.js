@@ -49,7 +49,7 @@ const LandingPage = () => {
       </header>
       
       {/* 3D Model Section */}
-      <div className="hero-3d-model" style={{ position: 'absolute', right: '30%', top: '20%', width: '45%', height: '73%', transform: 'translateX(50%)', zIndex: 1 }}> {/* Center container on the right side of the screen */}
+      <div className="hero-3d-model" style={{ position: 'absolute', right: '30%', top: '15%', width: '45%', height: '73%', transform: 'translateX(50%)', zIndex: 1 }}> {/* Center container on the right side of the screen */}
         <Canvas>
           <ambientLight intensity={0.7} />
           <pointLight position={[10, 10, 10]} />
