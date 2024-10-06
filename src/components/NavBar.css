@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: #FFC300; /* Updated to #FFC300 */
+  background-color: #FFC300;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease-in-out;
@@ -38,14 +38,14 @@
 }
 
 .top-info p:hover svg {
-  transform: scale(1.2); /* Scale up icons slightly on hover */
+  transform: scale(1.2);
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem; /* Increased padding to move links lower */
+  padding: 1.2rem 2rem;
 }
 
 .logo img {
@@ -56,7 +56,14 @@
 }
 
 .logo img:hover {
-  transform: scale(1.1); /* Slightly increase the size on hover */
+  transform: scale(1.1);
+}
+
+.menu-icon {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
 }
 
 .nav-links {
@@ -72,24 +79,24 @@
 
 .nav-links a {
   color: white;
-  text-decoration: none; /* Removed underline */
+  text-decoration: none;
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
-  padding-bottom: 0.2rem; /* Adjusted padding to move the text slightly lower */
+  padding-bottom: 0.2rem;
 }
 
 .nav-links a:hover {
-  color: #FFDC00; /* Yellow on hover */
+  color: #FFDC00;
 }
 
 .found-keys a {
-  color: #1e3a8a; /* Blue color for text */
-  background-color: #FFDC00; /* Yellow button background */
+  color: #1e3a8a;
+  background-color: #FFDC00;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 50px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -98,7 +105,58 @@
 }
 
 .found-keys a:hover {
-  color: white; /* White text on hover */
-  background-color: #FF0000; /* Entire button background fills red on hover */
-  transform: translateY(-2px); /* Slightly lift on hover */
+  color: white;
+  background-color: #FF0000;
+  transform: translateY(-2px);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .top-info {
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on mobile */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.nav-links-mobile {
+    display: flex;
+    background-color: #1e3a8a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .found-keys a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
 }
