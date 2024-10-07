@@ -2,14 +2,15 @@
 import React from 'react';
 import { FaShieldAlt, FaEuroSign, FaGift } from 'react-icons/fa'; // Importing relevant icons
 import './Subscription.css';
+import back from '../assets/back.jpg'; // Importing the background image
 
 const Subscription = () => {
   return (
-    <section className="subscription-section">
+    <section className="subscription-section" style={{ backgroundImage: `url(${back})` }}>
       <div className="subscription-content">
         <h2>Get Peace of Mind with Our Subscription Plan</h2>
         <p>
-          Join our 5-year subscription plan for just <strong>90 euros</strong> and never worry about your keys again. Our service ensures that, if your keys are lost, they will always find their way back to you. This plan is designed for those who value security, reliability, and simplicity.
+          Join our 5-year subscription plan for just <strong>XXX euros</strong> and never worry about your keys again. Our service ensures that, if your keys are lost, they will always find their way back to you. This plan is designed for those who value security, reliability, and simplicity.
         </p>
 
         <div className="features">
@@ -33,12 +34,12 @@ const Subscription = () => {
             <FaEuroSign className="feature-icon" />
             <h3>Affordable Peace of Mind</h3>
             <p>
-              Just 90 euros for a 5-year plan means long-lasting peace of mind without breaking the bank. Stay protected for less than 2 euros per month.
+              Just XXX euros for a 5-year plan means long-lasting peace of mind without breaking the bank. Stay protected for less than 2 euros per month.
             </p>
           </div>
         </div>
 
-        <button className="subscribe-button">Subscribe Now for €90 / 5 Years</button>
+        <button className="subscribe-button">Subscribe Now for XXX / 5 Years</button>
       </div>
     </section>
   );
